@@ -1,61 +1,58 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(241, 237, 237);
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(241, 237, 237);
 }
-.container{
-    width: 80%;
-    margin: 5% auto;
+.container {
+  width: 80%;
+  margin: 5% auto;
 }
-.main-header
-{
-    text-align:center;
-    border-bottom: 5px double black;
-    margin-bottom: 0.8rem;  
-    background:linear-gradient(rgb(252, 250, 252), transparent 100%),
-    linear-gradient(0deg,white, transparent),
-     url(../img/bgSm.jpg);
-    background-size: cover;
-    height: 100%; 
+.main-header {
+  text-align: center;
+  border-bottom: 5px double black;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(rgb(252, 250, 252), transparent 100%),
+    linear-gradient(0deg, white, transparent), url(../img/bgSm.jpg);
+  background-size: cover;
+  height: 100%;
 }
 .title-1 {
-    margin: 0 0 2.5rem 0;
-    color: rgb(37, 35, 35);
-    text-shadow: 1px 1px rgba(37, 35, 35,0.5);
-    letter-spacing: 0.3rem;    
-  }
-  .title,
-  footer{
-      background-color: #0b778a;
-      color:white ;
-      padding:1.8rem;
-      border-radius: 5px;   
-  }
-  p{
-      font-size: 1.2rem;  
-      text-align: center; 
-      margin-bottom: 1rem; 
-  }
-  /* main body */
-  
-  form {
-      margin-bottom: 3.7rem;
-  }
-  fieldset{
-      border: none;
-  }
+  margin: 0 0 2.5rem 0;
+  color: rgb(37, 35, 35);
+  text-shadow: 1px 1px rgba(37, 35, 35, 0.5);
+  letter-spacing: 0.3rem;
+}
+.title,
+footer {
+  background-color: #0b778a;
+  color: white;
+  padding: 1.8rem;
+  border-radius: 5px;
+}
+p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* main body */
+
+form {
+  margin-bottom: 3.7rem;
+}
+fieldset {
+  border: none;
+}
 
 input,
 textarea,
-select  {
-     outline: 0;
-	border: none;
-	padding: 1rem;
-	border-radius: 0.5rem;
-
+select {
+  outline: 0;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 input[type="text"],
 input[type="email"],
@@ -64,123 +61,144 @@ input[type="tel"],
 input[type="number"],
 textarea,
 select {
-    font-size: 1rem;
-    color: rgb(247, 244, 244);
-    height: 3rem;
-    margin: 0.5rem 0 1rem 0;
-    background-color: #869294;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.5) inset
+  font-size: 1rem;
+  color: rgb(247, 244, 244);
+  height: 3rem;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #869294;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5) inset;
+  width: 100%;
 }
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+  background-color: #0b778a;
+} 
+textarea {
+  height: 6.25rem;
+}
+
+input[type="number"] {
+  width: 50%;
+}
+label {
+  display: block;
+  margin: 1rem;
+  color: #869294;
+}
+legend,
+.interest {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  padding-right: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.box label {
+  display: inline;
+}
+
+.flex_zip {
+  border-bottom: 5px double black;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 1.3rem;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.sign {
+  background-color: rgb(113, 119, 56);
+}
+.error {
+  background-color: #206470;
+}
+
+@media (min-width: 768px) {
+  .conainer {
+    width: 85%;
+    max-width: 600px;
+  }
+  /*main-body*/
+  form {
+    width: 65%;
+    margin: auto;
+  }
+  
 input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="tel"],
+input[type="number"],
 textarea,
 select {
-    width: 100%;
+  transition: width 2s, height 2s, transform 2s;
 }
 
-input[type="number"]{
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus {
+  width: 4.3rem;
+  height: 4.3rem;
+}
+  .flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex label {
+    flex-basis: 25%;
+  }
+  .flex input,
+  .flex select {
+    flex-basis: 75%;
+  }
+  #state {
+    width: 100%;
+  }
+
+  #zip {
+    max-width: 30%;
+  }
+  .other {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn_center {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
     width: 25%;
-}
-textarea:active,
-input:active
- {
-  background-color: #705b2f;
-}
-textarea:focus,
-input:focus,
-select:focus
- {
-  background-color: #0b778a;
-}
-
-label {
-  display: block;
-  margin: 0.5rem; 
-  color: #869294
-}
-legend,
-.interest{
-    font-size: 1rem;
-    font-weight: 600;
-    margin: 0.8rem;
-}
-
-input[type='checkbox'],
-input[type='radio'] {
-    padding-right: 0.5rem;
-    font-size: 1rem;
-    margin: 1rem;
-  } 
-  .box label{
-      display: inline;
-  } 
- 
-  .flex_zip{
-    border-bottom: 5px double black;
-    width: 100%;
   }
- 
-  
-.btn{
-    cursor:pointer;
-    display: block;
-    width: 100%;
-    padding: 1.3rem;
-    margin: 0.5rem auto;
-    border-radius: 5px;
-}
-.btn:hover{
-    opacity:0.8;
-}
-.sign {
-    background-color:rgb(113, 119, 56);
-
-}
-.error{
-    background-color: #206470;;
-}
-
-@media (min-width: 768px){
-    .conainer{
-        width: 90%;
-        max-width: 700px;     
-    }
-    /*main-body*/
-   
-    .flex{
-        display: flex;
-        flex-direction: row;    
-    }
-    .flex label{
-        flex-basis: 25%;
-    }
-    .flex input,
-    .flex select {
-        flex-basis:75%;
-    }
-    #state{
-        width: 100%;
-    }
-    
-  #zip{
-      max-width:10%;   
+  .inln {
+    display: inline-block;
   }
-  .other{
-      display: flex;
-      flex-direction: column;
+  .btn + .btn {
+    margin-left: 5px;
   }
-  
-  .btn{
-      width: 30%;
+  footer {
+    background-color: rgb(241, 237, 237);
+    color: initial;
   }
-    .inln{
-         width:auto;  
-        display:inline-block;
-    }
-    .btn + .btn{
-        margin-left:10px;
-    
-    }      
-    }
+}
