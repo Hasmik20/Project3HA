@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Signup for our Newsletter</title>
+</head>
+<body>
+    <div class="container">
+    <header class="main-header">
+        <h1 class="title">The code review</h1>
+        <h2 class="title-1">Sign up for our Newsletter</h2>
+        <p class="aim">Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+    <main class="main-body">
+         <form action="index.html" method="POST">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="flex">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="user_name" required placeholder="required">
+            </div>
+            <div class="flex">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="user_email" required placeholder="required">
+            </div>
+            <div class="flex">
+                <label for="number">Phone Number:</label>
+                <input type="tel" id="number" name="user_number" placeholder="+44 88 25">
+            </div>
+            <div class="flex">
+                <label for="address">Street Address:</label>
+                <input type="text" id="address" name="user_address">
+            </div>
+            <div class="flex">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="user_city">
+            </div>
+             <div class="flex">
+                 <label for="state">State:</label>
+                    <select id="state" name="user_state">
+                            <option value="select">Choose State</option>
+                        <optgroup label="Europe">
+                            <option value=" France"> France</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Germany">Germany</option>
+                            <option value=" Italy"> Italy</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Netherlands">Netherlands</option>
+                        </optgroup>
+                        <optgroup label="Asia">
+                                <option value="China"> China</option>
+                                <option value="India">India</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value=" North Korea"> North Korea</option>
+                                <option value="Taiwan">Taiwan</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Singapore">Singapore</option>
+                        </optgroup>
+                        <optgroup label="Africa">
+                            <option value="Nigeria"> Nigeria</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value=" North Korea"> North Korea</option>
+                            <option value="Algeria">Algeria</option>
+                     </optgroup>
+                    <option value="other">Other</option>
+                 </select>
+            </div>
+             <div class="flex flex_zip">
+                <label for="zip">ZIP Code:</label>
+                <input type='number' id="zip" name="user_zip" placeholder="123">
+            </div>
+        </fieldset>
+        <fieldset>
+            
+            <legend>Newsletter</legend>
+            <h4>Select the newsletter you would like to receive</h4>
+        
+            <label class="interest">Interests</label>
+                <div class="box">
+                    <input type="checkbox" name="user_interest" value="html" id="html"> 
+                    <label for="html">HTML News</label>
+                </div>
+
+                <div class="box">
+                    <input type="checkbox" name="user_interest" value="css" id="css"> 
+                    <label for="css">CSS News</label>
+                </div>
+                
+                <div class="box">
+                    <input type="checkbox" name="user_interest" value="JS" id="JS"> 
+                     <label for="JS">JS</label>
+                </div>
+
+                <h4 class="interest">Newsletter format</h4>
+
+                <div class="box">
+                     <input type="radio" name="user_format" value="html_format" id="html_format"> 
+                     <label for="html_format">HTML Format</label>
+              </div>
+
+                <div class="box">
+                  <input type="radio" name="user_format" value="plain_format" id="plain_format"> 
+                  <label for="plain_format">Plain Text</label>
+                </div>
+
+                <div class="flex other">
+                    <label for="other_topic" class="interest"> Other topics you would like to hear about</label>
+                    <textarea name="text" id="other_topic" cols="10" rows="10" placeholder="Other topics you would like to hear about"></textarea>
+                </div>
+        </fieldset>
+        <button type="submit" class="btn sign inln">Sign Up</button>
+        <button type="reset" class="btn error inln">Reset</button>
+    </form>
+    </main>
+    <footer>
+        <p>&copy; The Code Reviewer</p>
+    </footer>
+</div>
+</body>
+</html>
