@@ -14,9 +14,9 @@ body {
   text-align: center;
   border-bottom: 5px double black;
   margin-bottom: 0.8rem;
-  background: linear-gradient(rgb(252, 250, 252), transparent 100%),
+   background: linear-gradient(rgb(252, 250, 252), transparent 100%),
     linear-gradient(0deg, white, transparent), url(../img/bgSm.jpg);
-  background-size: cover;
+    background-size: cover;
   height: 100%;
 }
 .title-1 {
